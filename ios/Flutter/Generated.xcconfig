@@ -1,0 +1,9 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Users/luigirosso/Projects/flutter
+FLUTTER_APPLICATION_PATH=/Users/luigirosso/Projects/tilt_card
+FLUTTER_TARGET=/Users/luigirosso/Projects/tilt_card/lib/main.dart
+FLUTTER_BUILD_DIR=build
+SYMROOT=${SOURCE_ROOT}/../build/ios
+FLUTTER_FRAMEWORK_DIR=/Users/luigirosso/Projects/flutter/bin/cache/artifacts/engine/ios
+FLUTTER_BUILD_NAME=1.0.0
+FLUTTER_BUILD_NUMBER=1

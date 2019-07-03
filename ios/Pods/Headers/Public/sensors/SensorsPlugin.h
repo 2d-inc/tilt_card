@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/sensors/ios/Classes/SensorsPlugin.h
