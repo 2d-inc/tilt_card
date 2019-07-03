@@ -79,6 +79,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+		appBar: AppBar(title: Text(widget.title)),
       backgroundColor: const Color.fromRGBO(49, 27, 0, 1),
       body: GestureDetector(
         onPanUpdate: (DragUpdateDetails drag) {
@@ -100,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage>
               child: FlareTiltWidget(
                 'assets/Hamilton.flr',
                 fit: BoxFit.contain,
+				alignment: Alignment.topCenter,
                 //   pitch: -attitude.pitch - pi / 1.45,
                 //   roll: attitude.roll,
                 pitch: pitch,
