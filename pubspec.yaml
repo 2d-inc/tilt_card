@@ -20,17 +20,14 @@ dependencies:
   flutter:
     sdk: flutter
   flare_flutter:
-    path: ../Flare-Flutter/flare_flutter
-    # git: 
-    #   url: git://github.com/2d-inc/Flare-Flutter.git
-    #   ref: dev
-    #   path: flare_flutter
+    git: 
+      url: git://github.com/2d-inc/Flare-Flutter.git
+      ref: dev
+      path: flare_flutter
       
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  sensors: 
-    path: ../plugins/packages/sensors
 
 dev_dependencies:
   flutter_test:

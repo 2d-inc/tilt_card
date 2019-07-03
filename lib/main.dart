@@ -1,7 +1,4 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:sensors/sensors.dart';
 
 import 'flare_tilt_widget.dart';
 
@@ -25,13 +22,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Tilt Card'),
+      home: const MyHomePage(title: 'Tilt Card'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -48,36 +45,69 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  AttitudeEvent attitude = AttitudeEvent(0, 0, 0);
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+  double pitch = 0;
+  double roll = 0;
+
   @override
   void initState() {
     super.initState();
 
-    attitudeEvents.listen((AttitudeEvent event) {
-      // Do something with the event.
-      setState(() {
-        attitude = event;
+    _controller = AnimationController(
+        lowerBound: 0,
+        upperBound: 1,
+        duration: const Duration(milliseconds: 500),
+        vsync: this)
+      ..addListener(() {
+        setState(() {
+          pitch *= _controller.value;
+          roll *= _controller.value;
+        });
       });
-      //print("${event.pitch} ${event.roll} ${event.pitch}");
-    });
+
+    // attitudeEvents.listen((AttitudeEvent event) {
+    //   // Do something with the event.
+    //   setState(() {
+    //     attitude = event;
+    //   });
+    //   //print("${event.pitch} ${event.roll} ${event.pitch}");
+    // });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(49, 27, 0, 1),
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: FlareTiltWidget(
-              'assets/Hamilton.flr',
-              fit: BoxFit.contain,
-              pitch: -attitude.pitch - pi / 1.45,
-              roll: attitude.roll,
+      body: GestureDetector(
+        onPanUpdate: (DragUpdateDetails drag) {
+          setState(() {
+            var size = MediaQuery.of(context).size;
+            pitch += drag.delta.dy * (1 / size.height);
+            roll -= drag.delta.dx * (1 / size.width);
+          });
+        },
+        onPanEnd: (DragEndDetails details) {
+          _controller.reverse(from: 1.0);
+        },
+        onPanStart: (DragStartDetails details) {
+          _controller.stop();
+        },
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: FlareTiltWidget(
+                'assets/Hamilton.flr',
+                fit: BoxFit.contain,
+                //   pitch: -attitude.pitch - pi / 1.45,
+                //   roll: attitude.roll,
+                pitch: pitch,
+                roll: roll,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

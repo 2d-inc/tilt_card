@@ -19,69 +19,37 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0FE3DC447BD25FEE49EB59E28A8CF79F /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FFF62F4BCF0BA942F28F4B469FC2 /* Pods-Runner-dummy.m */; };
-		30ABFF644DC0E2D2C2F2000FE7F042D8 /* SensorsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 859AFC7971BC71E2963607AB687649F8 /* SensorsPlugin.m */; };
-		3A070945F76640CAAFDAAC6CC9C0ECFB /* SensorsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F3C84518F03DE85375552486D10D76 /* SensorsPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B3D259ED2BD61520DEF735B9EBABC846 /* sensors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC37B61B41BACCB36DD590A98CD4A9 /* sensors-dummy.m */; };
+		38A241F2AD169D96923EE7AD85EBB22C /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FFF62F4BCF0BA942F28F4B469FC2 /* Pods-Runner-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33BE1C9521589B397042EC86EC830A34 /* PBXContainerItemProxy */ = {
+		FC65932A1688538865AFF2C7582E0B19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
-		};
-		8A8E84088EBE7F55A8E578BA7CCE79F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
-		};
-		E1C69C00C042CA9FB8C498534DDCE7EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F4E153BD851435DFD43F88677D99440;
-			remoteInfo = sensors;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0BFCEA83FF73561FC3966ED8A434AD54 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
 		0FB8FFF62F4BCF0BA942F28F4B469FC2 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
-		12E5E6189BDD45B384F9ED92AD85EEB7 /* sensors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sensors.xcconfig; sourceTree = "<group>"; };
-		19F3C84518F03DE85375552486D10D76 /* SensorsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SensorsPlugin.h; path = ../../../../../../../plugins/packages/sensors/ios/Classes/SensorsPlugin.h; sourceTree = "<group>"; };
-		23636C158394984D667C6CC8A9899208 /* sensors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sensors-prefix.pch"; sourceTree = "<group>"; };
-		409DF6D1AEA776DF02E7BB7CD12364C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/LICENSE; sourceTree = "<group>"; };
-		44E9A476BC77D07B7504B981C9F23DDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../plugins/packages/sensors/LICENSE; sourceTree = "<group>"; };
-		5BF29ADC80928AF1FC3A44E1D120E585 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/Flutter.framework; sourceTree = "<group>"; };
-		622A59997DA40E79DD2FAE87659A0C5B /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Flutter.podspec; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Runner.a"; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		859AFC7971BC71E2963607AB687649F8 /* SensorsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SensorsPlugin.m; path = ../../../../../../../plugins/packages/sensors/ios/Classes/SensorsPlugin.m; sourceTree = "<group>"; };
+		7A89C3199E94BAD094667D25A1642A8F /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/Flutter.framework; sourceTree = "<group>"; };
+		8A711B6B1A881116EB603EFD86C48620 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Flutter.podspec; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8C3477F1E6616960E815FBE9E0140F1C /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D818B259D71446628B515016276DF7E /* Flutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
-		95DC37B61B41BACCB36DD590A98CD4A9 /* sensors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sensors-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9C986FFC734491CD212A962DA15177D /* sensors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = sensors.podspec; path = ../../../../../../plugins/packages/sensors/ios/sensors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B3C9D3CFCF3FA7E3BB8B31D0E3B0DA40 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		CA747FA64C38F66B0FF91533C9B31039 /* Flutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
 		DF0AF5474C02B0E1B187AA8DC4AE41BC /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		E5ABAE8C92A5056077FF6F02481D7B6C /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		E8F9245513B7B9282E88B745B8AF218E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../flutter/bin/cache/artifacts/engine/ios/LICENSE; sourceTree = "<group>"; };
 		ED468541C49D0804BC43219649F55161 /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDE39762B0340D8BDA011CDEF60F1BBA /* libsensors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libsensors.a; path = libsensors.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F4048CD66F017A35EBAB6C651A407E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F98EEC87AC0A20840856E2A0E1B7C23 /* Frameworks */ = {
+		A127B63A3DBF8A577DE8D7B85231A3C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,81 +74,29 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		0D14D42D2289BC635B7FD1D68D86C369 /* Support Files */ = {
+		2DD070FAD44C097C2B76DE72D0D38F08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12E5E6189BDD45B384F9ED92AD85EEB7 /* sensors.xcconfig */,
-				95DC37B61B41BACCB36DD590A98CD4A9 /* sensors-dummy.m */,
-				23636C158394984D667C6CC8A9899208 /* sensors-prefix.pch */,
+				7A89C3199E94BAD094667D25A1642A8F /* Flutter.framework */,
 			);
-			name = "Support Files";
-			path = "../../../../Pods/Target Support Files/sensors";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11A4770F0AC1BA3C346EC53477E63AA7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63197DB0DC34F09A22870882CE522617 /* Flutter */,
-				F3F4D015326C6C60029D182FF7AEB785 /* sensors */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		13AB1B65A27C8E71BF35FE19E6B92109 /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				9BC81AE3761C1CAC50A63FD378B03BDB /* sensors */,
-			);
-			name = plugins;
-			path = plugins;
-			sourceTree = "<group>";
-		};
-		27999D7BD110C005C390233959A0FBE8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				19F3C84518F03DE85375552486D10D76 /* SensorsPlugin.h */,
-				859AFC7971BC71E2963607AB687649F8 /* SensorsPlugin.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		2C8F27EC5D43E4774D2A9070DA0612CA /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				27999D7BD110C005C390233959A0FBE8 /* Classes */,
-			);
-			name = ios;
-			path = ios;
-			sourceTree = "<group>";
-		};
-		38B6A049BFCE7A7F85456012910B1433 /* Products */ = {
+		4B409AE5A49220CA521D80907187BEB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */,
-				FDE39762B0340D8BDA011CDEF60F1BBA /* libsensors.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		40DB10FEF87DBC4659D2E379F61470A5 /* .. */ = {
+		6D770AFDAA386C3DD6FD0399ABB77C22 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0426B08D6527915E932EDCC9AB983F6 /* .. */,
+				CA747FA64C38F66B0FF91533C9B31039 /* Flutter.xcconfig */,
 			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		63197DB0DC34F09A22870882CE522617 /* Flutter */ = {
-			isa = PBXGroup;
-			children = (
-				E561B1578F888E49DE707F98E086D0C9 /* Frameworks */,
-				86901261B0A79CE72EB050C9323D29DB /* Pod */,
-				EC14493CA422D0EB27C1B235238DAABB /* Support Files */,
-			);
-			name = Flutter;
-			path = ../.symlinks/flutter/ios;
+			name = "Support Files";
+			path = "../../../Pods/Target Support Files/Flutter";
 			sourceTree = "<group>";
 		};
 		6F2A2EF8165275926B54C1764A239A70 /* Targets Support Files */ = {
@@ -191,103 +107,22 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		73F072418E824DF1CB0327D30DC52AD5 /* .symlinks */ = {
+		856DA83D064339AD88FCE36702B5654E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				13AB1B65A27C8E71BF35FE19E6B92109 /* plugins */,
-			);
-			name = .symlinks;
-			path = .symlinks;
-			sourceTree = "<group>";
-		};
-		7C755DF806369A6A4C09176887F39989 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				73F072418E824DF1CB0327D30DC52AD5 /* .symlinks */,
-			);
-			name = ios;
-			path = ios;
-			sourceTree = "<group>";
-		};
-		86901261B0A79CE72EB050C9323D29DB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				622A59997DA40E79DD2FAE87659A0C5B /* Flutter.podspec */,
-				409DF6D1AEA776DF02E7BB7CD12364C8 /* LICENSE */,
+				8A711B6B1A881116EB603EFD86C48620 /* Flutter.podspec */,
+				E8F9245513B7B9282E88B745B8AF218E /* LICENSE */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		96691FAC515C02BE3CF52F016C84DFA7 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				C0BF35028DD0F04708233F677696C736 /* .. */,
-			);
-			name = ..;
-			path = ../../../../../../plugins/packages/sensors/ios;
-			sourceTree = "<group>";
-		};
-		9BC81AE3761C1CAC50A63FD378B03BDB /* sensors */ = {
-			isa = PBXGroup;
-			children = (
-				2C8F27EC5D43E4774D2A9070DA0612CA /* ios */,
-			);
-			name = sensors;
-			path = sensors;
-			sourceTree = "<group>";
-		};
-		9DFEDE4F0A767E4EB39BA21DF494CC30 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				44E9A476BC77D07B7504B981C9F23DDC /* LICENSE */,
-				A9C986FFC734491CD212A962DA15177D /* sensors.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		A2DD357E433EF5D1EE37643A1FC48E31 /* tilt_card */ = {
-			isa = PBXGroup;
-			children = (
-				7C755DF806369A6A4C09176887F39989 /* ios */,
-			);
-			name = tilt_card;
-			path = tilt_card;
-			sourceTree = "<group>";
-		};
-		C0426B08D6527915E932EDCC9AB983F6 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				C0F0569D10697C73C7BE77720DE3251C /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C0BF35028DD0F04708233F677696C736 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				40DB10FEF87DBC4659D2E379F61470A5 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C0F0569D10697C73C7BE77720DE3251C /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				A2DD357E433EF5D1EE37643A1FC48E31 /* tilt_card */,
-			);
-			name = ..;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				11A4770F0AC1BA3C346EC53477E63AA7 /* Development Pods */,
+				E42F87C39B2715C0403F6966A476E3C2 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				38B6A049BFCE7A7F85456012910B1433 /* Products */,
+				4B409AE5A49220CA521D80907187BEB9 /* Products */,
 				6F2A2EF8165275926B54C1764A239A70 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -299,46 +134,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E561B1578F888E49DE707F98E086D0C9 /* Frameworks */ = {
+		E42F87C39B2715C0403F6966A476E3C2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5BF29ADC80928AF1FC3A44E1D120E585 /* Flutter.framework */,
+				F6112F135BEE5AB57CC06AD7D1FF5131 /* Flutter */,
 			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		EC14493CA422D0EB27C1B235238DAABB /* Support Files */ = {
+		F6112F135BEE5AB57CC06AD7D1FF5131 /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
-				8D818B259D71446628B515016276DF7E /* Flutter.xcconfig */,
+				2DD070FAD44C097C2B76DE72D0D38F08 /* Frameworks */,
+				856DA83D064339AD88FCE36702B5654E /* Pod */,
+				6D770AFDAA386C3DD6FD0399ABB77C22 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../../../Pods/Target Support Files/Flutter";
-			sourceTree = "<group>";
-		};
-		F3F4D015326C6C60029D182FF7AEB785 /* sensors */ = {
-			isa = PBXGroup;
-			children = (
-				96691FAC515C02BE3CF52F016C84DFA7 /* .. */,
-				9DFEDE4F0A767E4EB39BA21DF494CC30 /* Pod */,
-				0D14D42D2289BC635B7FD1D68D86C369 /* Support Files */,
-			);
-			name = sensors;
-			path = ../.symlinks/plugins/sensors/ios;
+			name = Flutter;
+			path = ../.symlinks/flutter/ios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AAE98365B41F809794B4832B3F9EDE89 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A070945F76640CAAFDAAC6CC9C0ECFB /* SensorsPlugin.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B671D46AC3BF0067B94F7B7AB37580BA /* Headers */ = {
+		406DA64066D3D788F558F10778103568 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,39 +168,20 @@
 /* Begin PBXNativeTarget section */
 		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04C683D133FB730B0522F0C5C1C1D110 /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildConfigurationList = 8D77994C6C0F424B922E7C578BC6EE5C /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
 			buildPhases = (
-				B671D46AC3BF0067B94F7B7AB37580BA /* Headers */,
-				CEB0D5FEA69C0BDC8B857D4B0C1ABCDC /* Sources */,
-				5F98EEC87AC0A20840856E2A0E1B7C23 /* Frameworks */,
+				406DA64066D3D788F558F10778103568 /* Headers */,
+				443779F5514EA3615690EF7922837D61 /* Sources */,
+				A127B63A3DBF8A577DE8D7B85231A3C6 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				243FBA8D56C61E3D4C3EB284A9937C87 /* PBXTargetDependency */,
-				7AEB4585D194DD279F93CFF265AF0AAE /* PBXTargetDependency */,
+				41C5563788DAD7C0CF72CA980D686966 /* PBXTargetDependency */,
 			);
 			name = "Pods-Runner";
 			productName = "Pods-Runner";
 			productReference = 669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8F4E153BD851435DFD43F88677D99440 /* sensors */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E55E353D4D5B3F8C3B133EFAA977D7A /* Build configuration list for PBXNativeTarget "sensors" */;
-			buildPhases = (
-				AAE98365B41F809794B4832B3F9EDE89 /* Headers */,
-				3D4A85785A6CD7FE2B241D80A7376349 /* Sources */,
-				4F4048CD66F017A35EBAB6C651A407E2 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72583AD74EB4B7CF1780ED885DC627AB /* PBXTargetDependency */,
-			);
-			name = sensors;
-			productName = sensors;
-			productReference = FDE39762B0340D8BDA011CDEF60F1BBA /* libsensors.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -402,87 +201,40 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 38B6A049BFCE7A7F85456012910B1433 /* Products */;
+			productRefGroup = 4B409AE5A49220CA521D80907187BEB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
 				8B74B458B450D74B75744B87BD747314 /* Pods-Runner */,
-				8F4E153BD851435DFD43F88677D99440 /* sensors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D4A85785A6CD7FE2B241D80A7376349 /* Sources */ = {
+		443779F5514EA3615690EF7922837D61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D259ED2BD61520DEF735B9EBABC846 /* sensors-dummy.m in Sources */,
-				30ABFF644DC0E2D2C2F2000FE7F042D8 /* SensorsPlugin.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEB0D5FEA69C0BDC8B857D4B0C1ABCDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FE3DC447BD25FEE49EB59E28A8CF79F /* Pods-Runner-dummy.m in Sources */,
+				38A241F2AD169D96923EE7AD85EBB22C /* Pods-Runner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		243FBA8D56C61E3D4C3EB284A9937C87 /* PBXTargetDependency */ = {
+		41C5563788DAD7C0CF72CA980D686966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Flutter;
 			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 8A8E84088EBE7F55A8E578BA7CCE79F9 /* PBXContainerItemProxy */;
-		};
-		72583AD74EB4B7CF1780ED885DC627AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 33BE1C9521589B397042EC86EC830A34 /* PBXContainerItemProxy */;
-		};
-		7AEB4585D194DD279F93CFF265AF0AAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sensors;
-			target = 8F4E153BD851435DFD43F88677D99440 /* sensors */;
-			targetProxy = E1C69C00C042CA9FB8C498534DDCE7EE /* PBXContainerItemProxy */;
+			targetProxy = FC65932A1688538865AFF2C7582E0B19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		15805E1D7484E48E8689A2EA63B33B7A /* Profile */ = {
+		4624B2A0206B843ADD8F12D0B6EE01DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E5E6189BDD45B384F9ED92AD85EEB7 /* sensors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/sensors/sensors-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = sensors;
-				PRODUCT_NAME = sensors;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Profile;
-		};
-		257EC0BF5A2E234F4434785D84D0BF74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C9D3CFCF3FA7E3BB8B31D0E3B0DA40 /* Pods-Runner.debug.xcconfig */;
+			baseConfigurationReference = E5ABAE8C92A5056077FF6F02481D7B6C /* Pods-Runner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -498,53 +250,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		272FE73A02CBB96482AFC88374E1B185 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF0AF5474C02B0E1B187AA8DC4AE41BC /* Pods-Runner.profile.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Profile;
-		};
-		4A3864CAA474C822DE76885BA6BDB07D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E5E6189BDD45B384F9ED92AD85EEB7 /* sensors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/sensors/sensors-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = sensors;
-				PRODUCT_NAME = sensors;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -612,7 +317,7 @@
 		};
 		5858D6C27EFF0C2FCD012AA1CB8682AF /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D818B259D71446628B515016276DF7E /* Flutter.xcconfig */;
+			baseConfigurationReference = CA747FA64C38F66B0FF91533C9B31039 /* Flutter.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -624,6 +329,28 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Profile;
+		};
+		68B9192B283707157F5F19A2C11ED5D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C9D3CFCF3FA7E3BB8B31D0E3B0DA40 /* Pods-Runner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		6DB88287FBF0DDC642169D4FE56485F2 /* Profile */ = {
 			isa = XCBuildConfiguration;
@@ -687,7 +414,7 @@
 		};
 		7C95A14E0BB18C22AC2B0BCC6C1C0984 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D818B259D71446628B515016276DF7E /* Flutter.xcconfig */;
+			baseConfigurationReference = CA747FA64C38F66B0FF91533C9B31039 /* Flutter.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -764,9 +491,9 @@
 			};
 			name = Debug;
 		};
-		A5CD377B20F63CBF3E2EDC7A8109D4A3 /* Release */ = {
+		8D1B96680D0480063B859C2B31BD777D /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5ABAE8C92A5056077FF6F02481D7B6C /* Pods-Runner.release.xcconfig */;
+			baseConfigurationReference = DF0AF5474C02B0E1B187AA8DC4AE41BC /* Pods-Runner.profile.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -785,11 +512,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Profile;
 		};
 		BCC2AD7C6D1C6BF51924B04A17926544 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D818B259D71446628B515016276DF7E /* Flutter.xcconfig */;
+			baseConfigurationReference = CA747FA64C38F66B0FF91533C9B31039 /* Flutter.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -801,43 +528,9 @@
 			};
 			name = Debug;
 		};
-		C508EDC4438AF1B4425F6F6541FAFDB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E5E6189BDD45B384F9ED92AD85EEB7 /* sensors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/sensors/sensors-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = sensors;
-				PRODUCT_NAME = sensors;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04C683D133FB730B0522F0C5C1C1D110 /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				257EC0BF5A2E234F4434785D84D0BF74 /* Debug */,
-				272FE73A02CBB96482AFC88374E1B185 /* Profile */,
-				A5CD377B20F63CBF3E2EDC7A8109D4A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -848,12 +541,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E55E353D4D5B3F8C3B133EFAA977D7A /* Build configuration list for PBXNativeTarget "sensors" */ = {
+		8D77994C6C0F424B922E7C578BC6EE5C /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C508EDC4438AF1B4425F6F6541FAFDB5 /* Debug */,
-				15805E1D7484E48E8689A2EA63B33B7A /* Profile */,
-				4A3864CAA474C822DE76885BA6BDB07D /* Release */,
+				68B9192B283707157F5F19A2C11ED5D0 /* Debug */,
+				8D1B96680D0480063B859C2B31BD777D /* Profile */,
+				4624B2A0206B843ADD8F12D0B6EE01DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
