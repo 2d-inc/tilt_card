@@ -92,12 +92,14 @@ class _MyHomePageState extends State<MyHomePage>
         child: Stack(
           children: [
             Positioned.fill(
-              child: FlareTiltWidget('assets/Hamilton.flr',
-                  fit: BoxFit.contain,
-                  alignment: Alignment.center,
-                  pitch: pitch,
-                  roll: roll,
-                  depth: depth?.value ?? 0),
+              child: FlareTiltWidget(
+                'assets/TiltSquares.flr',
+                fit: BoxFit.contain,
+                alignment: Alignment.center,
+                pitch: pitch,
+                roll: roll,
+                depth: depth?.value ?? 0,
+              ),
             ),
           ],
         ),
