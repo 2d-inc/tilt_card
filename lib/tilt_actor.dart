@@ -35,7 +35,7 @@ class TiltActor extends FlutterActor {
 class TiltArtboard extends FlutterActorArtboard {
   TiltArtboard(FlutterActor actor) : super(actor);
 
-  void setTilt(double pitch, double roll) {
+  void setTilt(double pitch, double roll, double tiltDepth) {
     Matrix4 transform = Matrix4.identity();
     Matrix4 perspective = Matrix4.identity()..setEntry(3, 2, 0.001);
     transform.multiply(Matrix4.diagonal3Values(0.7, 0.7, 1.0));
@@ -61,8 +61,8 @@ class TiltArtboard extends FlutterActorArtboard {
         }
 
         Matrix4 tiltTransform = Matrix4.copy(transform);
-        tiltTransform
-            .multiply(Matrix4.translationValues(0, 0, -100.0 - index * 35.0));
+        tiltTransform.multiply(
+            Matrix4.translationValues(0, 0, -100.0 - index * 35.0 * tiltDepth));
         (drawable as TiltDrawable).tiltTransform = tiltTransform;
       }
     }
