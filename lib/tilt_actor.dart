@@ -1,14 +1,29 @@
 import 'dart:ui' as ui;
 import 'package:flare_dart/actor_artboard.dart';
 import 'package:flare_dart/actor_shape.dart';
+import 'package:flare_dart/actor_image.dart';
 import "package:flare_flutter/flare.dart";
 import 'package:flutter/material.dart';
 
 // We create a custom Actor in order to override the shape nodes
 class TiltActor extends FlutterActor {
+  TiltActor(FlutterActor source) {
+    copyFlutterActor(source);
+  }
+
+  static TiltArtboard instanceArtboard(FlutterActor source) {
+    TiltActor tiltActor = TiltActor(source);
+    return source.artboard.makeInstanceWithActor(tiltActor) as TiltArtboard;
+  }
+
   @override
   ActorShape makeShapeNode() {
     return TiltActorShape();
+  }
+
+  @override
+  ActorImage makeImageNode() {
+    return TiltActorImage();
   }
 
   @override
@@ -23,7 +38,7 @@ class TiltArtboard extends FlutterActorArtboard {
   void setTilt(double pitch, double roll) {
     Matrix4 transform = Matrix4.identity();
     Matrix4 perspective = Matrix4.identity()..setEntry(3, 2, 0.001);
-	transform.multiply(Matrix4.diagonal3Values(0.7, 0.7, 1.0));
+    transform.multiply(Matrix4.diagonal3Values(0.7, 0.7, 1.0));
     transform.multiply(perspective);
     transform.multiply(Matrix4.rotationY(roll));
     transform.multiply(Matrix4.rotationX(pitch));
@@ -61,6 +76,25 @@ class TiltDrawable {
 // This is the custom actor shape we create which
 // will override the default draw to introduce the tilt.
 class TiltActorShape extends FlutterActorShape implements TiltDrawable {
+  @override
+  Matrix4 tiltTransform;
+
+  @override
+  void draw(ui.Canvas canvas) {
+    if (!doesDraw) {
+      return;
+    }
+
+    canvas.save();
+    canvas.transform(tiltTransform.storage);
+    super.draw(canvas);
+    canvas.restore();
+  }
+}
+
+// This is the custom actor shape we create which
+// will override the default draw to introduce the tilt.
+class TiltActorImage extends FlutterActorImage implements TiltDrawable {
   @override
   Matrix4 tiltTransform;
 

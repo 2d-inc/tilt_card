@@ -102,13 +102,12 @@ class FlareTiltRenderObject extends FlareRenderBox {
       return;
     }
     super.load();
-	print("LOADING $_filename");
     loadFlare(_filename).then((FlutterActor actor) {
       if (actor == null || actor.artboard == null) {
         return;
       }
-      TiltArtboard artboard =
-          actor.artboard.makeInstanceWithActor(TiltActor()) as TiltArtboard;
+
+      TiltArtboard artboard = TiltActor.instanceArtboard(actor);
       artboard.initializeGraphics();
       _artboard = artboard;
       _idle = _artboard.getAnimation("idle");

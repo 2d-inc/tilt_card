@@ -38,7 +38,8 @@
  * One of these methods must be invoked before calling `-setViewController:`.
  */
 FLUTTER_EXPORT
-@interface FlutterEngine : NSObject <FlutterTextureRegistry, FlutterPluginRegistry>
+@interface FlutterEngine
+    : NSObject <FlutterBinaryMessenger, FlutterTextureRegistry, FlutterPluginRegistry>
 /**
  * Initialize this FlutterEngine with a `FlutterDartProject`.
  *
@@ -235,12 +236,6 @@ FLUTTER_EXPORT
  * started, it returns `nil`.
  */
 @property(nonatomic, readonly) NSURL* observatoryUrl;
-
-/**
- * The `FlutterBinaryMessenger` associated with this FlutterEngine (used for communicating with
- * channels).
- */
-@property(nonatomic, readonly) NSObject<FlutterBinaryMessenger>* binaryMessenger;
 
 @end
 
