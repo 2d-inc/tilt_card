@@ -1,1 +1,5 @@
 .DS_Store
+build/
+ios/Runner.xcworkspace/
+ios/Flutter/App.framework/flutter_assets
+pubspec.lock
