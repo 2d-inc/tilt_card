@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage>
   Animation<double> tilt;
   Animation<double> depth;
   double pitch = 0;
-  double roll = 0;
+  double yaw = 0;
 
   @override
   void initState() {
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage>
         setState(() {
           if (tilt != null) {
             pitch *= tilt.value;
-            roll *= tilt.value;
+            yaw *= tilt.value;
           }
         });
       });
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage>
           setState(() {
             var size = MediaQuery.of(context).size;
             pitch += drag.delta.dy * (1 / size.height);
-            roll -= drag.delta.dx * (1 / size.width);
+            yaw -= drag.delta.dx * (1 / size.width);
           });
         },
         onPanEnd: (DragEndDetails details) {
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage>
                 fit: BoxFit.contain,
                 alignment: Alignment.center,
                 pitch: pitch,
-                roll: roll,
+                yaw: yaw,
                 depth: depth?.value ?? 0,
               ),
             ),

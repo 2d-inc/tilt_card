@@ -12,7 +12,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
   final Alignment alignment;
   final String filename;
   final double pitch;
-  final double roll;
+  final double yaw;
   final double depth;
 
   const FlareTiltWidget(
@@ -20,7 +20,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
     this.fit = BoxFit.contain,
     this.alignment = Alignment.center,
     this.pitch,
-    this.roll,
+    this.yaw,
     this.depth,
   });
 
@@ -32,7 +32,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
       ..fit = fit
       ..alignment = alignment
       ..pitch = pitch
-      ..roll = roll
+      ..yaw = yaw
 	  ..tiltDepth = depth;
   }
 
@@ -45,7 +45,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
       ..fit = fit
       ..alignment = alignment
       ..pitch = pitch
-      ..roll = roll
+      ..yaw = yaw
 	  ..tiltDepth = depth;
   }
 
@@ -58,7 +58,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
 class FlareTiltRenderObject extends FlareRenderBox {
   TiltArtboard _artboard;
   String _filename;
-  double pitch, roll, tiltDepth;
+  double pitch, yaw, tiltDepth;
 
   String get filename => _filename;
   set filename(String value) {
@@ -86,7 +86,7 @@ class FlareTiltRenderObject extends FlareRenderBox {
     }
     _animationTime += elapsedSeconds;
     _idle?.apply(_animationTime % _idle.duration, _artboard, 1.0);
-    _artboard.setTilt(pitch, roll, tiltDepth);
+    _artboard.setTilt(pitch, yaw, tiltDepth);
     _artboard.advance(elapsedSeconds);
   }
 
