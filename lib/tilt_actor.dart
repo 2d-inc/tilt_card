@@ -38,7 +38,7 @@ class TiltArtboard extends FlutterActorArtboard {
   void setTilt(double pitch, double roll, double tiltDepth) {
     Matrix4 transform = Matrix4.identity();
     Matrix4 perspective = Matrix4.identity()..setEntry(3, 2, 0.001);
-    transform.multiply(Matrix4.diagonal3Values(0.7, 0.7, 1.0));
+    transform.multiply(Matrix4.diagonal3Values(0.6, 0.6, 1.0));
     transform.multiply(perspective);
     transform.multiply(Matrix4.rotationY(roll));
     transform.multiply(Matrix4.rotationX(pitch));

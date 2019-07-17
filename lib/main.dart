@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage>
           children: [
             Positioned.fill(
               child: FlareTiltWidget(
-                'assets/TiltSquares.flr',
+                'assets/Hamilton.flr',
                 fit: BoxFit.contain,
                 alignment: Alignment.center,
                 pitch: pitch,
