@@ -5,7 +5,8 @@ import 'package:flare_dart/actor_image.dart';
 import "package:flare_flutter/flare.dart";
 import 'package:flutter/material.dart';
 
-// We create a custom Actor in order to override the shape nodes
+// We create a custom Actor in order to have it create custom 
+// versions of the shape image nodes.
 class TiltActor extends FlutterActor {
   TiltActor(FlutterActor source) {
     copyFlutterActor(source);
