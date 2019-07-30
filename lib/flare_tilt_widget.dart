@@ -33,7 +33,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
       ..alignment = alignment
       ..pitch = pitch
       ..yaw = yaw
-	  ..tiltDepth = depth;
+      ..tiltDepth = depth;
   }
 
   @override
@@ -46,7 +46,7 @@ class FlareTiltWidget extends LeafRenderObjectWidget {
       ..alignment = alignment
       ..pitch = pitch
       ..yaw = yaw
-	  ..tiltDepth = depth;
+      ..tiltDepth = depth;
   }
 
   @override
@@ -103,23 +103,21 @@ class FlareTiltRenderObject extends FlareRenderBox {
   }
 
   @override
-  void load() {
+  Future<void> load() async {
     if (_filename == null) {
       return;
     }
-    super.load();
-    loadFlare(_filename).then((FlutterActor actor) {
-      if (actor == null || actor.artboard == null) {
-        return;
-      }
+    FlutterActor actor = await loadFlare(_filename);
+    if (actor == null || actor.artboard == null) {
+      return;
+    }
 
-      TiltArtboard artboard = TiltActor.instanceArtboard(actor);
-      artboard.initializeGraphics();
-      _artboard = artboard;
-      _idle = _artboard.getAnimation("idle");
+    TiltArtboard artboard = TiltActor.instanceArtboard(actor);
+    artboard.initializeGraphics();
+    _artboard = artboard;
+    _idle = _artboard.getAnimation("idle");
 
-      _artboard.advance(0.0);
-      markNeedsPaint();
-    });
+    _artboard.advance(0.0);
+    markNeedsPaint();
   }
 }

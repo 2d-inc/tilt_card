@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage>
                 alignment: Alignment.center,
                 pitch: pitch,
                 yaw: yaw,
-                depth: depth?.value ?? 0,
+                depth: (depth?.value ?? 0) * 3,
               ),
             ),
           ],
